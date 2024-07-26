@@ -143,9 +143,12 @@ html_content += """
 """
 
 date = datetime.date.today().strftime('%Y_%m_%d')
+file_path = f'./{folder}/arxiv_{date}.html'
 
-# Write the HTML content to a file
-with open(f'./{folder}/arxiv_{date}.html', 'w', encoding='UTF-8') as file:
-    file.write(html_content)
-
-print(f"HTML file './{folder}/arxiv_{date}.html' has been created.")
+# Check if the file already exists
+if os.path.exists(file_path):
+    print(f"File already exists: {file_path}. Aborting the process.")
+else:
+    with open(file_path, 'w', encoding='UTF-8') as file:
+        file.write(html_content)
+    print(f"HTML file '" + file_path + "' has been created.")
