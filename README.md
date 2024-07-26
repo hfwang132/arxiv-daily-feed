@@ -3,11 +3,13 @@ Personal arXiv feed with filtered keywords in an html.
 
 # Usage
 
-- modify the arXiv category and keywords in `myarxiv.py` to your interest
-- run `python myarxiv.py`
+- Update the arXiv category and keywords in myarxiv.py to match your interests.
+- Run `python myarxiv.py`
+- Open `./arxiv/arxiv_*.html` with any browser and enjoy!
+- You can run this script from time to time. New feeds will be created and will not duplicate existing ones.
 
 # Output
 
-- a folder named `./arxiv`
-- a database `./arxiv/processed_articles.db` that avoids repeated articles
-- an html `./arxiv/arxiv_{date}.html` with articles filtered with keywords
+- A folder named `./arxiv`
+- A database `./arxiv/processed_articles.db` that avoids repeated articles
+- An html `./arxiv/arxiv_{date}.html` with articles filtered with keywords
